@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px){
+    #navbar{
+        /* justify-content: center; */
+    }
+}

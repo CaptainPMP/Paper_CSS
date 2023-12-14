@@ -1,16 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ onFilterChange }) => {
+    const [searchTerm, setSearchTerm] = useState('');
+  
+    const handleInputChange = (event) => {
+      const value = event.target.value;
+      setSearchTerm(value);
+      onFilterChange(value);
+    };
   return (
-        <nav className="border row ">
-            <div className="nav-brand col col-3">
-                <h3><a href="#">Get PaperCSS</a></h3>
+        <nav className="border row" id='navbar' style={{marginTop:".25rem"}}>
+            <div className="nav-brand row" id="logo">
+                <h3><a href="#">CatniumShop</a></h3>
             </div>
-                <input type="text" placeholder="Search your items" id="paperInputs1" className='col-3'/>
-            <div className="collapsible col col-fill">
-                <ul className="inline row flex-edges">
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">About</a></li>
+            <div className="row" id="search">
+                <input  type="text"
+                        placeholder="Search your items"
+                        id="paperInputs1"
+                        // className="col-3"
+                        value={searchTerm}
+                        onChange={handleInputChange}
+                />
+            </div>
+            <div className="row" id="link">
+                <ul className="inline row">
                     <li><a href="#">Github</a></li>
                 </ul>
             </div>
