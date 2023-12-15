@@ -25,7 +25,7 @@ const Navbar = ({ onFilterChange }) => {
             </div>
             <div className="row" id="link">
                 <ul className="inline row">
-                    <li><a href="#">Github</a></li>
+                    <li><a href="https://github.com/CaptainPMP/Paper_CSS" target='_blank'>Github</a></li>
                 </ul>
             </div>
         </nav>
