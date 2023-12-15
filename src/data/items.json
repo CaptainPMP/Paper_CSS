@@ -38,5 +38,13 @@
           "src": "https://c8.alamy.com/comp/2BXM44H/vector-pixel-art-gun-isolated-2BXM44H.jpg",
           "desc_lists": ["+ 5 atk speed", "+ 10 dmg", "old but powerful"],
           "price": 50
+        },
+        {        
+                "id": 5,
+                "isNew": false,
+                "title": "Legendary Potion",
+                "src": "https://i.pinimg.com/564x/28/e9/8c/28e98c0abb9d9ec758ab4404d4d279b5.jpg",
+                "desc_lists": ["+ 100 health", "They said once you drink it, you addicted to it like a alcohol"],
+                "price": 150
         }
 ]
